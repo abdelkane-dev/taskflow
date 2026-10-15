@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parcours Détaillé — Abdoul Karim Traoré | Expériences & Formation</title>
+  <meta name="description" content="Découvrez le parcours académique et professionnel complet d'Abdoul Karim Traoré : cursus universitaire L3 UIE, candidature Master ISD Paris-Saclay, réalisations techniques et vision d'ingénieur.">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%236366f1'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='48' fill='white'>AK</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Feuille de style principale -->
+  <link rel="stylesheet" href="../style.css">
+
+  <style>
+    /* Styles spécifiques pour la page Parcours Détaillé */
+    .parcours-header-hero {
+      padding: 7rem 0 3.5rem;
+      position: relative;
+      text-align: center;
+    }
+    .back-home-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.25rem;
+      border-radius: var(--radius-full);
+      background: var(--bg-card);
+      border: 1px solid var(--bg-card-border);
+      color: var(--text-primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+      transition: all var(--transition-fast);
+      backdrop-filter: blur(12px);
+    }
+    .back-home-btn:hover {
+      transform: translateX(-4px);
+      border-color: var(--accent-primary);
+      color: var(--accent-primary);
+    }
+    .parcours-lead-card {
+      background: var(--bg-card);
+      border: 1px solid var(--bg-card-border);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      margin-bottom: 3.5rem;
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(16px);
+      box-shadow: var(--shadow-card);
+    }
+    .parcours-lead-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary), var(--accent-tertiary));
+    }
+    .deep-timeline-item {
+      position: relative;
+      padding-left: 2.5rem;
+      margin-bottom: 3rem;
+      border-left: 2px solid rgba(99, 102, 241, 0.25);
+    }
+    .deep-timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -9px;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--accent-primary);
+      box-shadow: 0 0 12px var(--accent-primary);
+    }
+    .deep-card {
+      background: var(--bg-card);
+      border: 1px solid var(--bg-card-border);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      transition: all var(--transition-normal);
+    }
+    .deep-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(99, 102, 241, 0.4);
+      box-shadow: var(--shadow-hover);
+    }
+    .tag-bubble {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: rgba(99, 102, 241, 0.15);
+      color: var(--accent-primary);
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .competence-matrix-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .competence-box {
+      background: var(--bg-card);
+      border: 1px solid var(--bg-card-border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient Glowing Background Orbs -->
+  <div class="bg-glow-orb bg-orb-1" aria-hidden="true"></div>
+  <div class="bg-glow-orb bg-orb-2" aria-hidden="true"></div>
+  <div class="bg-glow-orb bg-orb-3" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="logo-brand" aria-label="Accueil Abdoul Karim Traoré">
+        <div class="logo-badge">AK</div>
+        <span>A. Traoré<span class="text-gradient">.dev</span></span>
+      </a>
+
+      <div class="nav-actions">
+        <a href="../index.html#parcours" class="btn btn-outline btn-sm">
+          <span>← Retour au Portfolio</span>
+        </a>
+        <a href="cv.pdf" download="CV_Abdoul_Karim_Traore.pdf" class="btn btn-primary btn-sm">
+          <span>Télécharger CV</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Header Section -->
+  <main class="container">
+    <section class="parcours-header-hero">
+      <a href="../index.html#parcours" class="back-home-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        <span>Retour à l'accueil du portfolio</span>
+      </a>
+
+      <div class="section-badge">Feuille de Route & Histoire</div>
+      <h1 class="hero-title" style="margin-top: 1rem;">
+        Mon Cursus & Ma <span class="text-gradient">Vision d'Ingénieur</span>
+      </h1>
+      <p class="hero-description" style="max-width: 750px; margin: 1.5rem auto 0;">
+        Retracez en détail l'ensemble de mes étapes académiques, mes projets de soutenance de haut niveau et mes expériences professionnelles en génie logiciel et exploitation de données.
+      </p>
+    </section>
+
+    <!-- Master ISD Banner Focus -->
+    <div class="parcours-lead-card">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+        <div>
+          <span class="callout-badge" style="background: rgba(99, 102, 241, 0.2); color: var(--accent-primary);">Cap 2026 — 2028</span>
+          <h2 style="font-size: 1.8rem; margin-top: 0.5rem; font-family: var(--font-heading);">
+            Candidat Master ISD — <span class="text-gradient">Université Paris-Saclay</span>
+          </h2>
+          <p style="color: var(--text-secondary); margin-top: 0.4rem; font-size: 1.05rem;">
+            Ingénierie des Systèmes et Données en Contrat d'Apprentissage
+          </p>
+        </div>
+        <a href="../index.html#contact" class="btn btn-primary">
+          <span>Proposer une Alternance</span>
+        </a>
+      </div>
+      <p style="color: var(--text-secondary); line-height: 1.8;">
+        Cette candidature s'inscrit au cœur d'une vocation affirmée : concevoir des architectures distribuées fiables, traiter des flux de données complexes à grande échelle et intégrer des modèles d'intelligence artificielle au service de décisions opérationnelles. Mon cursus en Licence Ingénierie du Logiciel et des Données (UIE) m'a apporté la double culture indispensable : <strong>l'exigence architecturale du génie logiciel (Java, design patterns, transactions)</strong> et <strong>la puissance des statistiques exploratoires et de l'IA (Python, algorithmes, data mining)</strong>.
+      </p>
+    </div>
+
+    <!-- Section 1 : Expériences & Projets Marqueurs -->
+    <div style="margin-bottom: 4rem;">
+      <div class="section-header" style="text-align: left; margin-bottom: 2.5rem;">
+        <div class="section-badge">Missions Pratiques</div>
+        <h2 class="section-title">Expériences & Projets <span class="text-gradient">Structurants</span></h2>
+      </div>
+
+      <!-- Item 1: Orienta Mali -->
+      <div class="deep-timeline-item">
+        <div class="deep-card">
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+            <div>
+              <span class="timeline-date-badge">10/2023 — 07/2026 · Soutenance Majeure</span>
+              <h3 style="font-size: 1.4rem; font-family: var(--font-heading); margin-top: 0.5rem;">
+                Orienta Mali — Plateforme IA d'Orientation Universitaire
+              </h3>
+              <p style="color: var(--accent-primary); font-weight: 600;">UIE (Université Internationale Privée d'Excellence) · Bamako</p>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span class="tag-bubble">🤖 Intelligence Artificielle</span>
+              <span class="tag-bubble">📊 1 000+ Utilisateurs</span>
+            </div>
+          </div>
+          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.25rem;">
+            Développement complet d'un écosystème d'orientation prédictif pour résoudre le décrochage et le mauvais aiguillage des bacheliers maliens.
+          </p>
+          <ul class="timeline-bullets" style="margin-bottom: 1.5rem;">
+            <li><strong>Moteur de recommandation sur-mesure :</strong> Implémentation d'algorithmes analysant les filières, les notes historiques et les compétences avec une précision moyenne de <strong>85%</strong>.</li>
+            <li><strong>Architecture découplée & résiliente :</strong> Backend REST sous <strong>Django (Python)</strong> et interface utilisateur réactive en <strong>React.js</strong>.</li>
+            <li><strong>Exploration du marché de l'emploi :</strong> Intégration de modèles prédictifs croisant l'offre universitaire et les besoins émergents du secteur privé.</li>
+          </ul>
+          <div>
+            <span class="tech-tag-sm">Python</span>
+            <span class="tech-tag-sm">Django</span>
+            <span class="tech-tag-sm">React</span>
+            <span class="tech-tag-sm">PostgreSQL</span>
+            <span class="tech-tag-sm">Algorithmes IA</span>
+            <span class="tech-tag-sm">Scikit-Learn</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2: Stage Mali Développeur -->
+      <div class="deep-timeline-item">
+        <div class="deep-card">
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+            <div>
+              <span class="timeline-date-badge">21/09/2025 — 21/10/2025 · Stage Technique</span>
+              <h3 style="font-size: 1.4rem; font-family: var(--font-heading); margin-top: 0.5rem;">
+                Développeur Web & Mobile Full-Stack
+              </h3>
+              <p style="color: var(--accent-secondary); font-weight: 600;">Mali Développeur · Bamako</p>
+            </div>
+            <div>
+              <span class="tag-bubble">⏱️ 11 Écrans en 4 semaines</span>
+            </div>
+          </div>
+          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.25rem;">
+            Immersion en conditions professionnelles et respect d'un rythme de sprint exigeant pour la livraison d'une solution de fitness et bien-être.
+          </p>
+          <ul class="timeline-bullets" style="margin-bottom: 1.5rem;">
+            <li>Conception et intégration responsive de <strong>11 écrans</strong> complets (dashboards, programmes sportifs, nutrition).</li>
+            <li>Implémentation de l'application mobile en <strong>Flutter & Dart</strong> avec synchronisation locale sécurisée des données athlètes.</li>
+            <li>Travail collaboratif sous Git avec revues de code et respect strict de la charte UX/UI.</li>
+          </ul>
+          <div>
+            <span class="tech-tag-sm">Flutter</span>
+            <span class="tech-tag-sm">Dart</span>
+            <span class="tech-tag-sm">JavaScript</span>
+            <span class="tech-tag-sm">HTML5/CSS3</span>
+            <span class="tech-tag-sm">Git</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3: Systèmes de Gestion & Data Académiques -->
+      <div class="deep-timeline-item">
+        <div class="deep-card">
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+            <div>
+              <span class="timeline-date-badge">2024 — 2026 · Réalisations UIE</span>
+              <h3 style="font-size: 1.4rem; font-family: var(--font-heading); margin-top: 0.5rem;">
+                Logiciels SGBD & Analyse Statistique Multidimensionnelle
+              </h3>
+              <p style="color: var(--accent-tertiary); font-weight: 600;">UIE · Faculté des Sciences Informatiques</p>
+            </div>
+          </div>
+          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.25rem;">
+            Réalisation de systèmes applicatifs transactionnels exigeants pour valider la robustesse logicielle et l'intégrité des bases de données.
+          </p>
+          <ul class="timeline-bullets" style="margin-bottom: 1.5rem;">
+            <li><strong>Logiciel Hôtelier & Gestion de Pâtisserie :</strong> Développé en <strong>Java Swing</strong> avec persistance transactionnelle <strong>MySQL / JDBC</strong> selon le pattern MVC et DAO.</li>
+            <li><strong>Analyses Statistiques Avancées :</strong> Traitement de jeux de données multidimensionnels (régressions linéaires/logistiques, ACP, visualisations prédictives) via Python & Pandas.</li>
+          </ul>
+          <div>
+            <span class="tech-tag-sm">Java POO</span>
+            <span class="tech-tag-sm">MySQL</span>
+            <span class="tech-tag-sm">JDBC</span>
+            <span class="tech-tag-sm">Pandas</span>
+            <span class="tech-tag-sm">NumPy</span>
+            <span class="tech-tag-sm">Statistiques</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2 : Formation Académique Complète -->
+    <div style="margin-bottom: 4rem;">
+      <div class="section-header" style="text-align: left; margin-bottom: 2.5rem;">
+        <div class="section-badge">Socle Universitaire</div>
+        <h2 class="section-title">Diplômes & <span class="text-gradient">Formations</span></h2>
+      </div>
+
+      <div class="competence-matrix-grid">
+        <!-- Licence UIE -->
+        <div class="competence-box" style="border-top: 3px solid var(--accent-primary);">
+          <span class="timeline-date-badge">2023 — 2026</span>
+          <h3 style="font-size: 1.25rem; margin-top: 0.8rem; font-family: var(--font-heading);">
+            Licence en Informatique
+          </h3>
+          <p style="font-weight: 600; color: var(--accent-primary); margin-bottom: 0.8rem;">
+            Ingénierie du Logiciel et des Données (UIE)
+          </p>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
+            Formation d'excellence axée sur le génie logiciel moderne, l'algorithmie avancée, les architectures de bases de données distribuées et les mathématiques appliquées aux données.
+          </p>
+        </div>
+
+        <!-- Master ISD Paris-Saclay -->
+        <div class="competence-box" style="border-top: 3px solid var(--accent-secondary); background: rgba(99, 102, 241, 0.05);">
+          <span class="timeline-date-badge" style="background: rgba(99, 102, 241, 0.2); color: var(--accent-primary);">Projet 2026 — 2028</span>
+          <h3 style="font-size: 1.25rem; margin-top: 0.8rem; font-family: var(--font-heading);">
+            Master ISD (Ingénierie des Systèmes et Données)
+          </h3>
+          <p style="font-weight: 600; color: var(--accent-secondary); margin-bottom: 0.8rem;">
+            Université Paris-Saclay · Alternance
+          </p>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
+            Spécialisation dans les architectures Big Data, pipelines de streaming temps réel, gouvernance de données et modèles d'IA de dernière génération.
+          </p>
+        </div>
+
+        <!-- Baccalauréat Scientifique -->
+        <div class="competence-box" style="border-top: 3px solid var(--accent-tertiary);">
+          <span class="timeline-date-badge">2022 — 2023</span>
+          <h3 style="font-size: 1.25rem; margin-top: 0.8rem; font-family: var(--font-heading);">
+            Baccalauréat Scientifique (TSExp)
+          </h3>
+          <p style="font-weight: 600; color: var(--accent-tertiary); margin-bottom: 0.8rem;">
+            Lycée BIYA de Faladié · Bamako
+          </p>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
+            Mention bien avec solides bases en mathématiques pures, calcul différentiel, physique appliquée et rigueur du raisonnement scientifique.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action Footer -->
+    <div style="text-align: center; padding: 4rem 2rem; background: var(--bg-card); border: 1px solid var(--bg-card-border); border-radius: var(--radius-lg); margin-bottom: 5rem;">
+      <h2 style="font-size: 2rem; font-family: var(--font-heading); margin-bottom: 1rem;">
+        Intéressé par mon <span class="text-gradient">Profil ?</span>
+      </h2>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 2rem; font-size: 1.05rem;">
+        Je suis immédiatement disponible pour échanger sur vos opportunités d'alternance en Île-de-France ou vos projets d'ingénierie logicielle & data.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="../index.html#contact" class="btn btn-primary">
+          <span>Me Contacter Directement</span>
+        </a>
+        <a href="cv.pdf" download="CV_Abdoul_Karim_Traore.pdf" class="btn btn-secondary">
+          <span>Télécharger le CV PDF</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="logo-brand">
+        <div class="logo-badge">AK</div>
+        <span>Abdoul Karim Traoré</span>
+      </div>
+      <p style="color: var(--text-secondary); font-size: 0.9rem;">
+        © 2026 Abdoul Karim TRAORÉ · Portfolio & Parcours Académique
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
