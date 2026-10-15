@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdoul Karim Traoré — Ingénierie Logicielle & Données | Portfolio</title>
+  <meta name="description" content="Portfolio d'Abdoul Karim Traoré, étudiant en Licence Ingénierie du Logiciel et des Données (L3) et candidat au Master ISD de l'Université Paris-Saclay en apprentissage. Projets en IA, Python, Django, Java et Flutter.">
+  <meta name="keywords" content="Abdoul Karim Traoré, Portfolio, Ingénierie Logicielle, Data Science, Master ISD Paris-Saclay, Django, React, Flutter, Java, Python, Orienta Mali">
+  <meta name="author" content="Abdoul Karim Traoré">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%236366f1'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='48' fill='white'>AK</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Background Orbs -->
+  <div class="bg-glow-orb bg-orb-1" aria-hidden="true"></div>
+  <div class="bg-glow-orb bg-orb-2" aria-hidden="true"></div>
+  <div class="bg-glow-orb bg-orb-3" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <a href="#accueil" class="logo-brand" aria-label="Accueil Abdoul Karim Traoré">
+        <div class="logo-badge">AK</div>
+        <span>A. Traoré<span class="text-gradient">.dev</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#accueil" class="nav-link active">Accueil</a>
+        <a href="#a-propos" class="nav-link">À Propos</a>
+        <a href="#competences" class="nav-link">Compétences</a>
+        <a href="#projets" class="nav-link">Projets</a>
+        <a href="#parcours" class="nav-link">Parcours</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Changer le thème">
+          <span id="theme-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </span>
+        </button>
+
+        <a href="assets/cv.pdf" download="CV_Abdoul_Karim_Traore.pdf" class="btn btn-primary btn-sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>CV PDF</span>
+        </a>
+
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Menu de navigation" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="accueil">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text-content">
+          <div class="hero-status-pill">
+            <span class="status-dot"></span>
+            <span>Disponible pour Alternance · Candidat Master ISD Paris-Saclay</span>
+          </div>
+
+          <h1 class="hero-title">
+            Bonjour, je suis <br>
+            <span class="text-gradient">Abdoul Karim</span> TRAORÉ
+          </h1>
+
+          <div class="hero-subtitle">
+            Étudiant en Ingénierie Logicielle & Données | Futur Ingénieur IA & Data
+          </div>
+
+          <p class="hero-description">
+            Passionné par la conception de solutions logicielles intelligentes et l'exploitation de données massives. Fort d'une solide expertise en <strong>Python, Java, Flutter</strong> et d'un projet de soutenance IA ayant guidé plus de <strong>1 000 étudiants</strong>, je construis des applications robustes et à fort impact sociétal.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projets" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              <span>Découvrir mes Réalisations</span>
+            </a>
+            
+            <button id="open-cv-modal-btn" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              <span>Consulter le CV</span>
+            </button>
+
+            <a href="#contact" class="btn btn-outline">
+              <span>Me Contacter</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics -->
+          <div class="hero-meta-stats">
+            <div class="stat-item">
+              <h3>1 000+</h3>
+              <p>Étudiants orientés via la plateforme IA Orienta Mali</p>
+            </div>
+            <div class="stat-item">
+              <h3>85%</h3>
+              <p>Précision du moteur de recommandation basé IA</p>
+            </div>
+            <div class="stat-item">
+              <h3>L3 → Master</h3>
+              <p>Ingénierie Logicielle & Données (UIE) vers Paris-Saclay</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Profile Card -->
+        <div class="hero-visual-card">
+          <div class="floating-badge badge-top-right">
+            <span>⚡ Python & Django IA</span>
+          </div>
+
+          <div class="floating-badge badge-bottom-left">
+            <span>☕ Java & Systèmes BD</span>
+          </div>
+
+          <div class="profile-card-wrapper">
+            <div class="profile-img-container">
+              <img src="assets/profile_v2.jpg" alt="Abdoul Karim Traoré" class="profile-img">
+              <div class="profile-img-overlay"></div>
+              <div class="profile-badge-overlay">
+                <span class="floating-tag">📍 Bamako, Mali</span>
+                <span class="floating-tag" style="background: rgba(99, 102, 241, 0.9);">UIE · L3</span>
+              </div>
+            </div>
+
+            <div class="profile-details">
+              <h2 class="profile-name">Abdoul Karim Traoré</h2>
+              <p class="profile-role">Software & Data Engineering</p>
+              
+              <div class="tech-pills-row">
+                <span class="mini-pill">Python</span>
+                <span class="mini-pill">Java</span>
+                <span class="mini-pill">Flutter</span>
+                <span class="mini-pill">React</span>
+                <span class="mini-pill">Django</span>
+                <span class="mini-pill">MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section À Propos -->
+  <section class="section" id="a-propos">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Profil Professionnel</div>
+        <h2 class="section-title">À Propos de <span class="text-gradient">Moi</span></h2>
+        <p class="section-subtitle">
+          Découvrez mon parcours académique, ma rigueur technique et ma vision pour l'ingénierie des données et le génie logiciel.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card-main">
+          <p class="about-bio-lead">
+            « Actuellement en L3 Ingénierie du Logiciel et des Données, je me spécialise dans la conception de solutions logicielles orientées vers l'exploitation intelligente des données. »
+          </p>
+          
+          <p class="about-bio-p">
+            Fort de résultats d'excellence en programmation Java, en algorithmique et en analyse statistique, je conçois des systèmes d'information complets, de la modélisation relationnelle de bases de données jusqu'à l'implémentation de modèles d'intelligence artificielle et d'interfaces intuitives.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">💻</div>
+              <div class="highlight-text">
+                <h4>Génie Logiciel Full-Stack</h4>
+                <p>Développement web et mobile réactif avec Django, React et Flutter.</p>
+              </div>
+            </div>
+            
+            <div class="highlight-item">
+              <div class="highlight-icon">📊</div>
+              <div class="highlight-text">
+                <h4>Data Engineering & IA</h4>
+                <p>Statistiques exploratoires multidimensionnelles et moteurs de recommandation.</p>
+              </div>
+            </div>
+
+            <div class="highlight-item">
+              <div class="highlight-icon">⚙️</div>
+              <div class="highlight-text">
+                <h4>Architecture des BD</h4>
+                <p>Conception, modélisation et optimisation de requêtes SQL (MySQL, SQLite).</p>
+              </div>
+            </div>
+
+            <div class="highlight-item">
+              <div class="highlight-icon">🤝</div>
+              <div class="highlight-text">
+                <h4>Méthodes Agiles & Git</h4>
+                <p>Gestion de projet rigoureuse, modélisation UML et versioning GitHub.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Contacts -->
+          <div class="contact-quick-list">
+            <a href="mailto:abdoulkarimt334@gmail.com" class="contact-quick-item">
+              <span class="contact-quick-icon">✉️</span>
+              <span>abdoulkarimt334@gmail.com</span>
+            </a>
+            <a href="tel:+22393789916" class="contact-quick-item">
+              <span class="contact-quick-icon">📞</span>
+              <span>+223 93 78 99 16</span>
+            </a>
+            <a href="https://github.com/abdelkane-dev" target="_blank" rel="noopener noreferrer" class="contact-quick-item">
+              <span class="contact-quick-icon">🐙</span>
+              <span>GitHub : github.com/abdelkane-dev</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Banner Callout Paris-Saclay -->
+        <div class="about-callout-col">
+          <div class="banner-callout">
+            <span class="callout-badge">Objectif 2026 — 2028</span>
+            <h3>Candidat Master ISD<br><span class="text-gradient">Université Paris-Saclay</span></h3>
+            <p>
+              Je prépare activement mon intégration au <strong>Master Ingénierie des Systèmes et Données (ISD)</strong> en contrat d'apprentissage afin de consolider mon savoir-faire aux côtés d'équipes de pointe et d'évoluer en tant qu'expert en ingénierie des données et intelligence artificielle.
+            </p>
+
+            <ul style="display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+              <li style="display: flex; align-items: center; gap: 0.6rem;">
+                <span style="color: var(--accent-tertiary);">✓</span> Forte maîtrise de la POO Java & scripts Python
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.6rem;">
+                <span style="color: var(--accent-tertiary);">✓</span> Bases mathématiques & statistiques éprouvées
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.6rem;">
+                <span style="color: var(--accent-tertiary);">✓</span> Forte capacité d'adaptation et esprit d'équipe
+              </li>
+            </ul>
+
+            <a href="#contact" class="btn btn-primary" style="width: 100%;">
+              <span>Proposer une Alternance / Échanger</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Compétences -->
+  <section class="section" id="competences" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Savoir-Faire Technique</div>
+        <h2 class="section-title">Mes <span class="text-gradient">Compétences</span></h2>
+        <p class="section-subtitle">
+          Un éventail complet d'outils et de technologies pour concevoir des applications résilientes, évolutives et axées données.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- 1. Langages de Programmation -->
+        <div class="skill-domain-card">
+          <div class="domain-header">
+            <div class="domain-icon icon-purple">⚡</div>
+            <div>
+              <h3>Langages de Programmation</h3>
+              <p style="font-size: 0.8rem; color: var(--text-muted);">Back-end, Front-end & Mobile</p>
+            </div>
+          </div>
+          <div class="skill-tags-cloud">
+            <span class="skill-tag">Python (Django, Pandas)</span>
+            <span class="skill-tag">Java (Collections, Swing)</span>
+            <span class="skill-tag">Dart & Flutter</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Langage C</span>
+            <span class="skill-tag">JavaScript / HTML5 / CSS3</span>
+          </div>
+          <div class="skill-level-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Python & Django</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Java & Swing</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" style="width: 88%;"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Flutter & Dart</span>
+                <span>82%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" style="width: 82%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Gestion & Architecture des Données -->
+        <div class="skill-domain-card">
+          <div class="domain-header">
+            <div class="domain-icon icon-cyan">🗄️</div>
+            <div>
+              <h3>Gestion & Bases de Données</h3>
+              <p style="font-size: 0.8rem; color: var(--text-muted);">Stockage, Modélisation & SQL</p>
+            </div>
+          </div>
+          <div class="skill-tags-cloud">
+            <span class="skill-tag">Architecture des BD</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">SQLite</span>
+            <span class="skill-tag">Optimisation SQL</span>
+            <span class="skill-tag">Pandas Dataframes</span>
+            <span class="skill-tag">Transactions JDBC</span>
+          </div>
+          <div class="skill-level-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Modélisation Relationnelle</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" style="width: 88%;"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>MySQL & SQL Optimisé</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Traitement de données (Pandas)</span>
+                <span>82%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" style="width: 82%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Analyse & Méthodologies -->
+        <div class="skill-domain-card">
+          <div class="domain-header">
+            <div class="domain-icon icon-green">📈</div>
+            <div>
+              <h3>Analyse & Méthodologies</h3>
+              <p style="font-size: 0.8rem; color: var(--text-muted);">Statistiques, Conception & Agile</p>
+            </div>
+          </div>
+          <div class="skill-tags-cloud">
+            <span class="skill-tag">Statistiques Exploratoires</span>
+            <span class="skill-tag">Algorithmique Avancée</span>
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">Modélisation UML</span>
+            <span class="skill-tag">Gestion Agile (Scrum)</span>
+          </div>
+          <div class="skill-level-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Statistiques Multidimensionnelles</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Algorithmes & Structures Données</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" style="width: 88%;"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Versionnement Git / GitHub</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" style="width: 90%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Langues & Atouts Professionnels -->
+        <div class="skill-domain-card">
+          <div class="domain-header">
+            <div class="domain-icon icon-amber">🌐</div>
+            <div>
+              <h3>Langues & Soft Skills</h3>
+              <p style="font-size: 0.8rem; color: var(--text-muted);">Communication & Travail d'Équipe</p>
+            </div>
+          </div>
+          <div class="skill-tags-cloud">
+            <span class="skill-tag">Français (Courant / Maternelle)</span>
+            <span class="skill-tag">Anglais (Intermédiaire technique)</span>
+            <span class="skill-tag">Rigueur Analytique</span>
+            <span class="skill-tag">Résolution de Problèmes</span>
+            <span class="skill-tag">Communication Technique</span>
+          </div>
+          <div class="skill-level-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Français (Courant)</span>
+                <span>100%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" style="width: 100%;"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Anglais (Intermédiaire)</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" style="width: 75%;"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Projets Phares -->
+  <section class="section" id="projets">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Portfolio de Projets</div>
+        <h2 class="section-title">Mes <span class="text-gradient">Réalisations</span></h2>
+        <p class="section-subtitle">
+          Découvrez une sélection de projets académiques, personnels et professionnels illustrant mes compétences pratiques.
+        </p>
+
+        <!-- Filter Bar -->
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" data-filter="all">Tous les Projets</button>
+          <button class="filter-btn" data-filter="ai-data">IA & Données</button>
+          <button class="filter-btn" data-filter="web-mobile">Web & Mobile</button>
+          <button class="filter-btn" data-filter="software">Génie Logiciel & Java</button>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Projet 1: Orienta Mali (IA) -->
+        <div class="project-card" data-category="ai-data">
+          <div class="project-header-graphic">
+            <span class="project-badge-tag">Projet Soutenance UIE</span>
+            <div class="project-icon-art">🤖</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Orienta Mali — IA d'Orientation Universitaire</h3>
+            <p class="project-desc">
+              Conception et développement d'une plateforme d'orientation intelligente propulsée par des algorithmes d'apprentissage automatique, capable d'analyser les profils des étudiants maliens et les opportunités du marché du travail.
+            </p>
+            <div class="project-metric-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+              <span>1 000+ étudiants orientés · 85% de précision</span>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-tag-sm">Python</span>
+              <span class="tech-tag-sm">Django</span>
+              <span class="tech-tag-sm">React</span>
+              <span class="tech-tag-sm">IA & Recommandation</span>
+              <span class="tech-tag-sm">REST API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 2: Application Web & Mobile Fitness -->
+        <div class="project-card" data-category="web-mobile">
+          <div class="project-header-graphic">
+            <span class="project-badge-tag">Stage · Mali Développeur</span>
+            <div class="project-icon-art">📱</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Application Fitness Web & Mobile Flutter</h3>
+            <p class="project-desc">
+              Développement intensif d'une application de suivi d'entraînement et nutrition. Création d'une interface web moderne de 11 écrans et implémentation de la persistance des données utilisateurs sur mobile via Flutter/Dart.
+            </p>
+            <div class="project-metric-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              <span>11 écrans livrés en 4 semaines chrono</span>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-tag-sm">Flutter</span>
+              <span class="tech-tag-sm">Dart</span>
+              <span class="tech-tag-sm">HTML5 / CSS3</span>
+              <span class="tech-tag-sm">JavaScript</span>
+              <span class="tech-tag-sm">Local Storage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 3: Logiciel Gestion Hôtelière & Pâtisserie -->
+        <div class="project-card" data-category="software">
+          <div class="project-header-graphic">
+            <span class="project-badge-tag">Génie Logiciel UIE</span>
+            <div class="project-icon-art">☕</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Système de Gestion Hôtelière & Pâtisserie</h3>
+            <p class="project-desc">
+              Application desktop complète conçue en Java Swing avec gestion des réservations, facturation, inventaire de pâtisserie et persistance transactionnelle des données sous MySQL via architecture DAO/MVC.
+            </p>
+            <div class="project-metric-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              <span>Architecture MVC · Persistance MySQL</span>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-tag-sm">Java</span>
+              <span class="tech-tag-sm">Java Swing</span>
+              <span class="tech-tag-sm">MySQL</span>
+              <span class="tech-tag-sm">JDBC</span>
+              <span class="tech-tag-sm">POO & UML</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 4: Analyse Statistique Multidimensionnelle -->
+        <div class="project-card" data-category="ai-data">
+          <div class="project-header-graphic">
+            <span class="project-badge-tag">Data Science</span>
+            <div class="project-icon-art">📊</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Analyse Statistique Exploratoire & Visualisation</h3>
+            <p class="project-desc">
+              Traitement et analyse de données multidimensionnelles : calcul de corrélations, détection d'anomalies, régressions et génération de graphiques décisionnels pour dégager des tendances prédictives.
+            </p>
+            <div class="project-metric-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"></path><path d="M12 20V4"></path><path d="M6 20v-6"></path></svg>
+              <span>Méthodes statistiques exploratoires</span>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-tag-sm">Python</span>
+              <span class="tech-tag-sm">Pandas</span>
+              <span class="tech-tag-sm">NumPy</span>
+              <span class="tech-tag-sm">Statistiques</span>
+              <span class="tech-tag-sm">Data Viz</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 5: TaskFlow & Gestion Agile -->
+        <div class="project-card" data-category="software">
+          <div class="project-header-graphic">
+            <span class="project-badge-tag">Outil Collaboratif</span>
+            <div class="project-icon-art">🔄</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">TaskFlow — Suivi de Tâches & Workflow Git</h3>
+            <p class="project-desc">
+              Outil modulaire de suivi de tâches et gestion de workflow agile d'équipe, intégrant des règles de commit rigoureuses et une architecture découplée pour le pilotage de sprint.
+            </p>
+            <div class="project-metric-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+              <span>Workflow Agile & Versioning Git</span>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-tag-sm">JavaScript</span>
+              <span class="tech-tag-sm">Git & GitHub</span>
+              <span class="tech-tag-sm">Agile / Scrum</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Parcours (Expériences & Formations) -->
+  <section class="section" id="parcours" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Parcours & Évolution</div>
+        <h2 class="section-title">Expérience & <span class="text-gradient">Formation</span></h2>
+        <p class="section-subtitle">
+          La chronologie de mes études universitaires et de mes expériences professionnelles en développement.
+        </p>
+      </div>
+
+      <div class="timeline-wrapper">
+        <!-- Colonne 1: Expériences Professionnelles -->
+        <div class="timeline-column">
+          <h3 class="timeline-column-title">
+            <span style="color: var(--accent-primary);">💼</span> Expériences Professionnelles
+          </h3>
+
+          <div class="timeline-items-list">
+            <!-- Expérience 1 -->
+            <div class="timeline-card">
+              <span class="timeline-date-badge">21/09/2025 — 21/10/2025</span>
+              <h4 class="timeline-role">Développeur Web & Mobile (Stage Technique)</h4>
+              <div class="timeline-institution">Mali Développeur · Bamako</div>
+              <ul class="timeline-bullets">
+                <li>Développement d'une application web Fitness (HTML, CSS, JavaScript) couvrant 11 écrans, conçue et livrée en 4 semaines.</li>
+                <li>Implémentation des fonctionnalités de gestion et de stockage des données utilisateurs en Flutter/Dart.</li>
+              </ul>
+            </div>
+
+            <!-- Expérience 2 -->
+            <div class="timeline-card">
+              <span class="timeline-date-badge">10/10/2023 — 21/07/2026</span>
+              <h4 class="timeline-role">Projet de Soutenance : Plateforme IA Orienta Mali</h4>
+              <div class="timeline-institution">Université Internationale Privée d'Excellence (UIE) · Bamako</div>
+              <ul class="timeline-bullets">
+                <li>Conception et développement de la plateforme <strong>Orienta Mali</strong> (React + Django) ayant guidé plus de 1 000 étudiants maliens.</li>
+                <li>Conception d'un moteur de recommandation basé sur les profils atteignant 85% de précision.</li>
+                <li>Intégration de modèles d'IA pour analyser les tendances dynamiques du marché de l'emploi malien.</li>
+              </ul>
+            </div>
+
+            <!-- Expérience 3 -->
+            <div class="timeline-card">
+              <span class="timeline-date-badge">21/10/2025 — 05/03/2026</span>
+              <h4 class="timeline-role">Projets Académiques & Personnels (Logiciels & Data)</h4>
+              <div class="timeline-institution">UIE · Bamako</div>
+              <ul class="timeline-bullets">
+                <li>Conception d'applications de gestion hôtelière et pâtisserie avec persistance en Java Swing et base de données MySQL.</li>
+                <li>Analyse exploratoire de jeux de données multidimensionnels via des méthodes statistiques avancées.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colonne 2: Formation Académique -->
+        <div class="timeline-column">
+          <h3 class="timeline-column-title">
+            <span style="color: var(--accent-secondary);">🎓</span> Formation Académique
+          </h3>
+
+          <div class="timeline-items-list">
+            <!-- Formation Target: Master ISD -->
+            <div class="timeline-card" style="border-color: rgba(99, 102, 241, 0.5);">
+              <span class="timeline-date-badge" style="background: rgba(99, 102, 241, 0.2); color: var(--accent-primary);">À venir 2026 — 2028</span>
+              <h4 class="timeline-role">Candidat Master ISD (Ingénierie des Systèmes et Données)</h4>
+              <div class="timeline-institution">Université Paris-Saclay · En Apprentissage</div>
+              <ul class="timeline-bullets">
+                <li>Spécialisation de haut niveau en ingénierie des données massives, architectures distribuées et intelligence artificielle.</li>
+                <li>Objectif : Devenir un expert en ingénierie des données et systèmes d'information intelligents.</li>
+              </ul>
+            </div>
+
+            <!-- Formation Licence -->
+            <div class="timeline-card">
+              <span class="timeline-date-badge">2023 — 2026</span>
+              <h4 class="timeline-role">Licence en Informatique (Ingénierie du Logiciel et des Données)</h4>
+              <div class="timeline-institution">Université Internationale Privée d'Excellence (UIE) · Bamako</div>
+              <ul class="timeline-bullets">
+                <li>Enseignements approfondis en programmation orientée objet Java, structures de données et algorithmique avancée.</li>
+                <li>Architecture et administration des bases de données relationnelles, requêtes SQL complexes et modélisation.</li>
+                <li>Statistiques exploratoires, analyse numérique, gestion de projet agile et modélisation UML.</li>
+              </ul>
+            </div>
+
+            <!-- Formation Bac -->
+            <div class="timeline-card">
+              <span class="timeline-date-badge">2022 — 2023</span>
+              <h4 class="timeline-role">Baccalauréat Scientifique (Sciences Expérimentales — TSExp)</h4>
+              <div class="timeline-institution">Lycée BIYA de Faladié</div>
+              <ul class="timeline-bullets">
+                <li>Solide socle en mathématiques, sciences physiques et logique scientifique.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Prenons Contact</div>
+        <h2 class="section-title">Discutons de vos <span class="text-gradient">Projets</span></h2>
+        <p class="section-subtitle">
+          Vous recherchez un profil motivé et compétent en alternance pour le Master ISD, ou souhaitez collaborer sur un projet logiciel / data ? Écrivez-moi !
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Infos directes -->
+        <div class="contact-info-card">
+          <div>
+            <h3>Coordonnées Directes</h3>
+            <p>
+              Je suis réactif par email, téléphone et WhatsApp. N'hésitez pas à me joindre pour toute opportunité ou échange technique.
+            </p>
+
+            <div class="contact-details-list">
+              <div class="contact-entry">
+                <div class="contact-icon-bubble">✉️</div>
+                <div class="contact-entry-meta">
+                  <h4>Email</h4>
+                  <a href="mailto:abdoulkarimt334@gmail.com">abdoulkarimt334@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-entry">
+                <div class="contact-icon-bubble">📞</div>
+                <div class="contact-entry-meta">
+                  <h4>Téléphone</h4>
+                  <a href="tel:+22393789916">+223 93 78 99 16</a>
+                </div>
+              </div>
+
+              <div class="contact-entry">
+                <div class="contact-icon-bubble">📍</div>
+                <div class="contact-entry-meta">
+                  <h4>Localisation</h4>
+                  <span>Bamako, Mali (Mobilité pour Paris-Saclay)</span>
+                </div>
+              </div>
+
+              <div class="contact-entry">
+                <div class="contact-icon-bubble">🐙</div>
+                <div class="contact-entry-meta">
+                  <h4>GitHub</h4>
+                  <a href="https://github.com/abdelkane-dev" target="_blank" rel="noopener noreferrer">abdelkane-dev</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="padding-top: 1.5rem; border-top: 1px solid var(--bg-card-border);">
+            <a href="assets/cv.pdf" download="CV_Abdoul_Karim_Traore.pdf" class="btn btn-secondary" style="width: 100%;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Télécharger mon CV complet (PDF)</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Formulaire Interactif -->
+        <div class="contact-form-card">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Votre Nom & Prénom</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Ex: Jean Dupont" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Votre Adresse Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="Ex: contact@entreprise.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Sujet du Message</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="Ex: Proposition d'alternance Master ISD" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Votre Message</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Décrivez votre projet ou votre proposition..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              <span>Envoyer le Message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modale Visualisation CV -->
+  <div class="modal-backdrop" id="cv-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="cv-modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="cv-modal-title" style="font-size: 1.2rem;">Curriculum Vitae — Abdoul Karim Traoré</h3>
+        <button id="close-cv-modal-btn" class="modal-close-btn" aria-label="Fermer la boîte de dialogue">&times;</button>
+      </div>
+      <div class="modal-body">
+        <iframe src="assets/cv.pdf" title="Aperçu du CV" style="width: 100%; height: 550px; border: none; border-radius: 8px;"></iframe>
+      </div>
+      <div style="padding: 1rem 1.75rem; border-top: 1px solid var(--bg-card-border); display: flex; justify-content: flex-end; gap: 1rem;">
+        <a href="assets/cv.pdf" download="CV_Abdoul_Karim_Traore.pdf" class="btn btn-primary btn-sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Télécharger le PDF</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="logo-brand">
+        <div class="logo-badge">AK</div>
+        <span>Abdoul Karim Traoré</span>
+      </div>
+
+      <p style="color: var(--text-secondary); max-width: 500px; font-size: 0.95rem;">
+        Étudiant L3 en Ingénierie Logicielle & Données (UIE) · Candidat Master ISD Paris-Saclay · Développeur Web & Mobile Full-Stack.
+      </p>
+
+      <div class="footer-social-links">
+        <a href="https://github.com/abdelkane-dev" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+        <a href="mailto:abdoulkarimt334@gmail.com" class="footer-social-icon" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+        <a href="tel:+22393789916" class="footer-social-icon" aria-label="Téléphone">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </a>
+      </div>
+
+      <div class="footer-copyright">
+        © 2026 Abdoul Karim TRAORÉ. Conçu avec passion & précision. Tous droits réservés.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
