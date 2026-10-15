@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Abdoul Karim Traoré | Portfolio</title>
+  <meta name="description" content="Contactez Abdoul Karim Traoré, étudiant en Ingénierie du Logiciel et des Données et candidat au Master ISD Paris-Saclay en apprentissage : alternance, projet logiciel ou échange technique.">
+  <meta name="author" content="Abdoul Karim Traoré">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%236366f1'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='48' fill='white'>AK</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles partagés du portfolio + styles propres à cette page -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body class="contact-page">
+
+  <div class="bg-glow-orb bg-orb-1" aria-hidden="true"></div>
+  <div class="bg-glow-orb bg-orb-2" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <a href="index.html#accueil" class="logo-brand" aria-label="Retour à l'accueil">
+        <div class="logo-badge">AK</div>
+        <span>A. Traoré<span class="text-gradient">.dev</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html#accueil" class="nav-link">Accueil</a>
+        <a href="index.html#a-propos" class="nav-link">À Propos</a>
+        <a href="index.html#competences" class="nav-link">Compétences</a>
+        <a href="index.html#projets" class="nav-link">Projets</a>
+        <a href="index.html#parcours" class="nav-link">Parcours</a>
+        <a href="pagecontact.html" class="nav-link active" aria-current="page">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Changer le thème">
+          <span id="theme-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </span>
+        </button>
+
+        <a href="assets/cv.pdf" download="CV_Abdoul_Karim_Traore.pdf" class="btn btn-primary btn-sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>CV PDF</span>
+        </a>
+
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Menu de navigation" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Intro -->
+    <section class="contact-hero">
+      <div class="container">
+        <div class="hero-status-pill">
+          <span class="status-dot"></span>
+          <span>Disponible pour une alternance · Master ISD Paris-Saclay</span>
+        </div>
+        <h1 class="contact-title">Discutons de votre <span class="text-gradient">projet</span></h1>
+        <p class="contact-lead">
+          Une proposition d'alternance, un projet logiciel ou data, une question technique : écrivez-moi, je réponds en général sous 48 heures.
+        </p>
+      </div>
+    </section>
+
+    <!-- Canaux rapides -->
+    <section class="contact-channels">
+      <div class="container">
+        <div class="channels-grid">
+          <a class="channel-card" href="mailto:abdoulkarimt334@gmail.com">
+            <div class="contact-icon-bubble">✉️</div>
+            <h3>Email</h3>
+            <p>abdoulkarimt334@gmail.com</p>
+            <span class="channel-action">Écrire un email</span>
+          </a>
+
+          <a class="channel-card" href="https://wa.me/22393789916" target="_blank" rel="noopener noreferrer">
+            <div class="contact-icon-bubble">💬</div>
+            <h3>WhatsApp</h3>
+            <p>+223 93 78 99 16</p>
+            <span class="channel-action">Ouvrir la discussion</span>
+          </a>
+
+          <a class="channel-card" href="tel:+22393789916">
+            <div class="contact-icon-bubble">📞</div>
+            <h3>Téléphone</h3>
+            <p>+223 93 78 99 16</p>
+            <span class="channel-action">Appeler</span>
+          </a>
+
+          <a class="channel-card" href="https://github.com/abdelkane-dev" target="_blank" rel="noopener noreferrer">
+            <div class="contact-icon-bubble">🐙</div>
+            <h3>GitHub</h3>
+            <p>github.com/abdelkane-dev</p>
+            <span class="channel-action">Voir mes dépôts</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulaire + infos -->
+    <section class="contact-main">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Formulaire -->
+          <div class="contact-form-card">
+            <h2 class="card-title">Envoyer un message</h2>
+            <p class="card-subtitle">Les champs marqués d'un astérisque sont obligatoires.</p>
+
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name" class="form-label">Nom et prénom *</label>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="Ex : Jean Dupont" autocomplete="name" required>
+                  <span class="field-error" id="name-error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">Adresse email *</label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="Ex : contact@entreprise.com" autocomplete="email" required>
+                  <span class="field-error" id="email-error" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="reason" class="form-label">Motif du message</label>
+                <select id="reason" name="reason" class="form-input form-select">
+                  <option value="Proposition d'alternance Master ISD">Proposition d'alternance (Master ISD)</option>
+                  <option value="Collaboration sur un projet">Collaboration sur un projet</option>
+                  <option value="Question technique">Question technique</option>
+                  <option value="Autre demande">Autre demande</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Sujet *</label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="Ex : Poste d'alternant data à Paris" required>
+                <span class="field-error" id="subject-error" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message *</label>
+                <textarea id="message" name="message" class="form-textarea" rows="6" maxlength="1500" placeholder="Décrivez votre projet ou votre proposition…" required></textarea>
+                <div class="field-meta">
+                  <span class="field-error" id="message-error" role="alert"></span>
+                  <span class="char-count"><span id="char-count">0</span> / 1500</span>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                  <span>Envoyer par email</span>
+                </button>
+                <button type="button" id="send-whatsapp-btn" class="btn btn-secondary">
+                  <span>Envoyer par WhatsApp</span>
+                </button>
+              </div>
+
+              <p class="form-note" id="form-status" role="status" aria-live="polite">
+                Votre application de messagerie s'ouvrira avec le message déjà rédigé.
+              </p>
+            </form>
+          </div>
+
+          <!-- Colonne latérale -->
+          <aside class="contact-side">
+            <div class="side-card">
+              <h3>Disponibilité</h3>
+              <ul class="side-list">
+                <li><span class="side-label">Recherche</span><span>Alternance, Master ISD 2026 — 2028</span></li>
+                <li><span class="side-label">Localisation</span><span>Bamako, Mali</span></li>
+                <li><span class="side-label">Mobilité</span><span>Paris-Saclay (apprentissage)</span></li>
+                <li><span class="side-label">Langues</span><span>Français, anglais technique</span></li>
+              </ul>
+            </div>
+
+            <div class="side-card">
+              <h3>Mon CV</h3>
+              <p>Formations, expériences et projets, en un seul document.</p>
+              <a href="assets/cv.pdf" download="CV_Abdoul_Karim_Traore.pdf" class="btn btn-secondary" style="width: 100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>Télécharger le CV (PDF)</span>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="contact-faq">
+      <div class="container">
+        <h2 class="faq-title">Questions fréquentes</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Quel type de poste recherchez-vous ?</summary>
+            <p>Une alternance en ingénierie des données, développement logiciel ou IA, en parallèle du Master Ingénierie des Systèmes et Données (ISD) à l'Université Paris-Saclay.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Quelles technologies maîtrisez-vous ?</summary>
+            <p>Python (Django, Pandas), Java (Swing, JDBC), Flutter/Dart, JavaScript, React, ainsi que MySQL et SQLite. Je travaille avec Git, GitHub et des méthodes agiles.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Quand puis-je commencer ?</summary>
+            <p>Mon calendrier suit celui du Master ISD (2026 — 2028). Écrivez-moi avec vos dates et nous verrons ensemble ce qui est possible.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Quel est le meilleur moyen de vous joindre ?</summary>
+            <p>L'email pour une proposition détaillée, WhatsApp pour un échange rapide.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="logo-brand">
+        <div class="logo-badge">AK</div>
+        <span>Abdoul Karim Traoré</span>
+      </div>
+
+      <p style="color: var(--text-secondary); max-width: 500px; font-size: 0.95rem;">
+        Étudiant L3 en Ingénierie Logicielle & Données (UIE) · Candidat Master ISD Paris-Saclay · Développeur Web & Mobile Full-Stack.
+      </p>
+
+      <div class="footer-social-links">
+        <a href="https://github.com/abdelkane-dev" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+        <a href="mailto:abdoulkarimt334@gmail.com" class="footer-social-icon" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+        <a href="tel:+22393789916" class="footer-social-icon" aria-label="Téléphone">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </a>
+      </div>
+
+      <div class="footer-copyright">
+        © 2026 Abdoul Karim TRAORÉ. Conçu avec passion & précision. Tous droits réservés.
+      </div>
+    </div>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+</html>
