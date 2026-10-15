@@ -1,0 +1,415 @@
+/* VARIABLES */
+
+:root {
+    --background: #080d18;
+    --card: #111b2c;
+    --text: #f5f7fb;
+    --muted: #a4afc2;
+    --green: #75f0c2;
+    --border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1150px, 90%);
+    margin: auto;
+}
+
+/* NAVIGATION */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(8, 13, 24, 0.9);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.logo span {
+    background: var(--green);
+    color: #08130f;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: var(--muted);
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--green);
+}
+
+/* HERO */
+
+.hero {
+    padding: 100px 0 65px;
+}
+
+.badge {
+    color: var(--green);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.hero h1 {
+    max-width: 850px;
+    margin: 22px 0;
+    font: 700 clamp(42px, 7vw, 76px)/1.08 "Space Grotesk", sans-serif;
+    letter-spacing: -3px;
+}
+
+.hero h1 span {
+    color: var(--green);
+}
+
+.hero p {
+    max-width: 650px;
+    color: var(--muted);
+    font-size: 17px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 14px 22px;
+    border-radius: 12px;
+    background: var(--green);
+    color: #08130f;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+}
+
+/* TECHNOLOGIES */
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 85px;
+}
+
+.technologies span {
+    padding: 10px 16px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    border-radius: 10px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* TITRE DES PROJETS */
+
+.section-title {
+    margin-bottom: 35px;
+}
+
+.section-title h2,
+.contact-section h2 {
+    font: 700 clamp(30px, 4vw, 42px) "Space Grotesk", sans-serif;
+    margin: 12px 0;
+}
+
+.section-title p,
+.contact-section p {
+    color: var(--muted);
+}
+
+/* FILTRES */
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 10px 17px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--muted);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--green);
+    color: #08130f;
+    border-color: var(--green);
+}
+
+/* GRILLE DES PROJETS */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.project-card {
+    overflow: hidden;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    transition: 0.35s;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(117, 240, 194, 0.5);
+}
+
+.project-card.hidden {
+    display: none;
+}
+
+/* IMAGES DÉCORATIVES */
+
+.project-image {
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image::before,
+.project-image::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+}
+
+.project-image::before {
+    width: 220px;
+    height: 220px;
+}
+
+.project-image::after {
+    width: 160px;
+    height: 160px;
+}
+
+.project-icon {
+    width: 75px;
+    height: 75px;
+    display: grid;
+    place-items: center;
+    border-radius: 22px;
+    font-size: 35px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 1;
+}
+
+.project-number {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    font: 700 45px "Space Grotesk", sans-serif;
+    color: rgba(255, 255, 255, 0.15);
+}
+
+.stock {
+    background: linear-gradient(135deg, #174b46, #18284d);
+}
+
+.resto {
+    background: linear-gradient(135deg, #693c25, #34244f);
+}
+
+.barber {
+    background: linear-gradient(135deg, #21384b, #26365f);
+}
+
+.myshop {
+    background: linear-gradient(135deg, #174d46, #18364e);
+}
+
+.smartcity {
+    background: linear-gradient(135deg, #253e68, #1c4650);
+}
+
+.education {
+    background: linear-gradient(135deg, #493a70, #213a58);
+}
+
+/* CONTENU DES CARTES */
+
+.project-content {
+    padding: 23px;
+}
+
+.project-content h3 {
+    font: 700 22px "Space Grotesk", sans-serif;
+    margin-bottom: 12px;
+}
+
+.project-content p {
+    min-height: 90px;
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+.tags span {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border);
+    padding: 5px 9px;
+    border-radius: 7px;
+    color: #c8d2e4;
+    font-size: 11px;
+}
+
+.project-link {
+    display: inline-block;
+    color: var(--green);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+#empty-message {
+    display: none;
+    color: var(--muted);
+    padding: 30px 0;
+}
+
+/* CONTACT */
+
+.contact-section {
+    margin: 100px auto;
+    padding: 55px;
+    border: 1px solid rgba(117, 240, 194, 0.25);
+    border-radius: 25px;
+    background: linear-gradient(
+        120deg,
+        rgba(117, 240, 194, 0.08),
+        rgba(130, 170, 255, 0.08)
+    );
+}
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid var(--border);
+    padding: 25px 0;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 92%;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding-top: 70px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-content p {
+        min-height: auto;
+    }
+
+    .contact-section {
+        padding: 28px;
+        margin: 65px auto;
+    }
+}

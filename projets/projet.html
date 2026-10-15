@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mes Projets | Adama Programmeur</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="container navbar">
+
+            <a href="#accueil" class="logo">
+                <span>A.</span> Adama Programmeur
+            </a>
+
+            <div class="nav-links">
+                <a href="#accueil">Accueil</a>
+                <a href="#projets">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Présentation -->
+    <section class="hero container" id="accueil">
+
+        <span class="badge">Portfolio · Développement web</span>
+
+        <h1>
+            Des idées qui deviennent des
+            <span>solutions.</span>
+        </h1>
+
+        <p>
+            Je suis Adama Doucoure, développeur web Django,
+            formateur et créateur de contenus.
+            Je conçois des applications web et des logiciels
+            de gestion pour répondre aux besoins des entreprises.
+        </p>
+
+        <a href="#projets" class="btn">
+            Découvrir mes projets ↓
+        </a>
+
+    </section>
+
+    <!-- Technologies -->
+    <section class="container technologies">
+
+        <span>Python</span>
+        <span>Django</span>
+        <span>Django REST Framework</span>
+        <span>PostgreSQL</span>
+        <span>JavaScript</span>
+        <span>HTML & CSS</span>
+        <span>Git & GitHub</span>
+
+    </section>
+
+    <!-- Projets -->
+    <section class="container projects-section" id="projets">
+
+        <div class="section-title">
+
+            <span class="badge">Mes réalisations</span>
+
+            <h2>Projets sélectionnés</h2>
+
+            <p>
+                Découvrez quelques-unes de mes réalisations
+                dans le domaine du développement web.
+            </p>
+
+        </div>
+
+        <!-- Filtres -->
+        <div class="filters">
+
+            <button class="filter-btn active" data-filter="all">
+                Tous les projets
+            </button>
+
+            <button class="filter-btn" data-filter="gestion">
+                Logiciels de gestion
+            </button>
+
+            <button class="filter-btn" data-filter="web">
+                Applications web
+            </button>
+
+            <button class="filter-btn" data-filter="education">
+                Éducation
+            </button>
+
+        </div>
+
+        <!-- Cartes des projets -->
+        <div class="projects-grid">
+
+            <!-- StockPro -->
+            <article class="project-card" data-category="gestion">
+
+                <div class="project-image stock">
+                    <span class="project-icon">▦</span>
+                    <span class="project-number">01</span>
+                </div>
+
+                <div class="project-content">
+
+                    <h3>StockPro Caisse</h3>
+
+                    <p>
+                        Logiciel de gestion commerciale permettant
+                        de gérer les produits, les ventes, les achats,
+                        les fournisseurs, les factures et les stocks.
+                    </p>
+
+                    <div class="tags">
+                        <span>Django</span>
+                        <span>DRF</span>
+                        <span>PostgreSQL</span>
+                        <span>JWT</span>
+                    </div>
+
+                    <a class="project-link"
+                       href="mailto:adamaprogrammeur@gmail.com?subject=Demonstration%20StockPro">
+                        Demander une démonstration ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- RestoPro -->
+            <article class="project-card" data-category="gestion">
+
+                <div class="project-image resto">
+                    <span class="project-icon">♨</span>
+                    <span class="project-number">02</span>
+                </div>
+
+                <div class="project-content">
+
+                    <h3>RestoPro</h3>
+
+                    <p>
+                        Solution de gestion de restaurant :
+                        menus, catégories, commandes, paiements
+                        et impression des tickets.
+                    </p>
+
+                    <div class="tags">
+                        <span>Django</span>
+                        <span>Commandes</span>
+                        <span>UI/UX</span>
+                    </div>
+
+                    <a class="project-link"
+                       href="mailto:adamaprogrammeur@gmail.com?subject=Projet%20RestoPro">
+                        Découvrir le projet ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- BarberPro -->
+            <article class="project-card" data-category="gestion">
+
+                <div class="project-image barber">
+                    <span class="project-icon">✂</span>
+                    <span class="project-number">03</span>
+                </div>
+
+                <div class="project-content">
+
+                    <h3>BarberPro</h3>
+
+                    <p>
+                        Application de gestion pour salon de coiffure :
+                        clients, services, file d'attente et paiements.
+                    </p>
+
+                    <div class="tags">
+                        <span>Gestion clients</span>
+                        <span>Paiements</span>
+                        <span>Dashboard</span>
+                    </div>
+
+                    <a class="project-link"
+                       href="mailto:adamaprogrammeur@gmail.com?subject=Demonstration%20BarberPro">
+                        Demander une démonstration ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- MYSHOP -->
+            <article class="project-card" data-category="web">
+
+                <div class="project-image myshop">
+                    <span class="project-icon">⌑</span>
+                    <span class="project-number">04</span>
+                </div>
+
+                <div class="project-content">
+
+                    <h3>MYSHOP</h3>
+
+                    <p>
+                        Plateforme de boutique en ligne permettant
+                        aux commerçants de présenter leurs produits
+                        et de recevoir des commandes.
+                    </p>
+
+                    <div class="tags">
+                        <span>E-commerce</span>
+                        <span>Commandes</span>
+                        <span>Web</span>
+                    </div>
+
+                    <a class="project-link"
+                       href="mailto:adamaprogrammeur@gmail.com?subject=Projet%20MYSHOP">
+                        En savoir plus ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Smart City -->
+            <article class="project-card" data-category="web">
+
+                <div class="project-image smartcity">
+                    <span class="project-icon">⌂</span>
+                    <span class="project-number">05</span>
+                </div>
+
+                <div class="project-content">
+
+                    <h3>Smart City Daloa</h3>
+
+                    <p>
+                        Plateforme de services urbains avec des espaces
+                        dédiés aux administrateurs, aux structures
+                        et aux citoyens.
+                    </p>
+
+                    <div class="tags">
+                        <span>Django</span>
+                        <span>Utilisateurs</span>
+                        <span>Application web</span>
+                    </div>
+
+                    <a class="project-link"
+                       href="https://github.com/AdamaProgrammeur/Smart-City"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Voir sur GitHub ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Éducation -->
+            <article class="project-card" data-category="education">
+
+                <div class="project-image education">
+                    <span class="project-icon">⌘</span>
+                    <span class="project-number">06</span>
+                </div>
+
+                <div class="project-content">
+
+                    <h3>Projets éducatifs</h3>
+
+                    <p>
+                        Solutions numériques dédiées à l'apprentissage,
+                        à la formation et à l'organisation
+                        de contenus éducatifs.
+                    </p>
+
+                    <div class="tags">
+                        <span>Web</span>
+                        <span>Éducation</span>
+                        <span>UI/UX</span>
+                    </div>
+
+                    <a class="project-link"
+                       href="mailto:adamaprogrammeur@gmail.com?subject=Projets%20educatifs">
+                        Me contacter ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <p id="empty-message">
+            Aucun projet dans cette catégorie.
+        </p>
+
+    </section>
+
+    <!-- Contact -->
+    <section class="container contact-section" id="contact">
+
+        <span class="badge">Travaillons ensemble</span>
+
+        <h2>Vous avez un projet en tête ?</h2>
+
+        <p>
+            Vous recherchez un développeur pour créer un site web,
+            une API REST ou un logiciel de gestion ?
+            Discutons de votre besoin.
+        </p>
+
+        <a href="mailto:adamaprogrammeur@gmail.com" class="btn">
+            Me contacter ↗
+        </a>
+
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container footer-content">
+
+            <p>
+                © <span id="year"></span> Adama Programmeur.
+                Tous droits réservés.
+            </p>
+
+            <p>
+                Développeur web · Formateur · Créateur de contenus
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
