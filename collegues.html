@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collègues — Abdoul Karim Traoré | Portfolio</title>
+  <meta name="description" content="Les collègues d'Abdoul Karim Traoré : profils, compétences et CV à consulter ou télécharger.">
+  <meta name="author" content="Abdoul Karim Traoré">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%236366f1'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='48' fill='white'>AK</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="collegues.css">
+</head>
+<body class="colleagues-page">
+
+  <div class="bg-glow-orb bg-orb-1" aria-hidden="true"></div>
+  <div class="bg-glow-orb bg-orb-2" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <a href="index.html#accueil" class="logo-brand" aria-label="Retour à l'accueil">
+        <div class="logo-badge">AK</div>
+        <span>A. Traoré<span class="text-gradient">.dev</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html#accueil" class="nav-link">Accueil</a>
+        <a href="index.html#a-propos" class="nav-link">À Propos</a>
+        <a href="index.html#competences" class="nav-link">Compétences</a>
+        <a href="index.html#projets" class="nav-link">Projets</a>
+        <a href="index.html#parcours" class="nav-link">Parcours</a>
+        <a href="collegues.html" class="nav-link active" aria-current="page">Collègues</a>
+        <a href="pagecontact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Changer le thème">
+          <span id="theme-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </span>
+        </button>
+
+        <a href="assets/cv.pdf" download="CV_Abdoul_Karim_Traore.pdf" class="btn btn-primary btn-sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>CV PDF</span>
+        </a>
+
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Menu de navigation" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Introduction -->
+    <section class="colleagues-hero">
+      <div class="container">
+        <h1 class="colleagues-title">Mes <span class="text-gradient">collègues</span></h1>
+        <p class="colleagues-lead">
+          Les personnes avec qui j'étudie et je travaille. Consultez leur profil, leurs compétences et leur CV.
+        </p>
+
+        <div class="colleagues-toolbar">
+          <label for="colleague-search" class="visually-hidden">Rechercher un collègue</label>
+          <input type="search" id="colleague-search" class="form-input" placeholder="Rechercher par nom, rôle ou compétence…" autocomplete="off">
+          <p class="colleagues-count" id="colleagues-count" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grille (remplie par collegues.js depuis collegues-data.js) -->
+    <section class="colleagues-list">
+      <div class="container">
+        <div class="colleagues-grid" id="colleagues-grid"></div>
+        <p class="colleagues-empty" id="colleagues-empty" hidden>Aucun collègue ne correspond à votre recherche.</p>
+      </div>
+    </section>
+
+    <!-- Invitation à ajouter son CV -->
+    <section class="colleagues-join">
+      <div class="container">
+        <div class="join-card">
+          <div>
+            <h2>Vous êtes collègue et vous n'êtes pas encore ici ?</h2>
+            <p>Envoyez votre nom, une courte présentation, votre photo et votre CV en PDF : votre fiche sera ajoutée à cette page.</p>
+          </div>
+          <a href="#" id="join-mail-link" class="btn btn-primary">
+            <span>Demander l'ajout de mon profil</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modale d'aperçu du CV -->
+  <div class="modal-backdrop" id="cv-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="cv-modal-title" hidden>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="cv-modal-title" style="font-size: 1.2rem;">CV</h3>
+        <button id="close-cv-modal-btn" class="modal-close-btn" aria-label="Fermer la boîte de dialogue">&times;</button>
+      </div>
+      <div class="modal-body">
+        <iframe id="cv-modal-frame" title="Aperçu du CV" style="width: 100%; height: 550px; border: none; border-radius: 8px;"></iframe>
+      </div>
+      <div class="modal-footer">
+        <a id="cv-modal-download" href="#" download class="btn btn-primary btn-sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Télécharger le PDF</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="logo-brand">
+        <div class="logo-badge">AK</div>
+        <span>Abdoul Karim Traoré</span>
+      </div>
+
+      <p style="color: var(--text-secondary); max-width: 500px; font-size: 0.95rem;">
+        Étudiant L3 en Ingénierie Logicielle & Données (UIE) · Candidat Master ISD Paris-Saclay · Développeur Web & Mobile Full-Stack.
+      </p>
+
+      <div class="footer-copyright">
+        © 2026 Abdoul Karim TRAORÉ. Conçu avec passion & précision. Tous droits réservés.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Données d'abord, logique ensuite -->
+  <script src="collegues-data.js"></script>
+  <script src="collegues.js"></script>
+</body>
+</html>
