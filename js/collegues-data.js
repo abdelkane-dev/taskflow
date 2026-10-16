@@ -25,14 +25,14 @@ window.COLLEAGUES = [
     id: "cheick-bougadary-djidani-traore",
     firstName: "Cheick Bougadary Djidani",
     lastName: "TRAORE",
-    role: null,            // ex : "Étudiant en Ingénierie du Logiciel"
+    role: "Chargé de la gestion du backend et la logique de liaison",            // ex : "Étudiant en Ingénierie du Logiciel"
     bio: null,             // 1 à 2 phrases de présentation
-    skills: [],            // ex : ["Python", "Java", "SQL"]
+    skills: ["SQL", "PHP", "HTML-CSS" ],            // ex : ["Python", "Java", "SQL"]
     photo: null,           // ex : "assets/colleagues/cheick-traore.jpg"
-    cv: null,              // ex : "assets/cv/cheick-traore.pdf"
-    email: null,
-    phone: null,
-    github: null,          // ex : "https://github.com/pseudo"
+    cv: "assets/CV_Cheick_B_D_TRAORE.pdf",              // ex : "assets/cv/cheick-traore.pdf"
+    email: "traorecheickbougadarydjidani@gmail.com",
+    phone: "+223 71 04 69 12",
+    github: "https://github.com/Checkkt",          // ex : "https://github.com/pseudo"
     linkedin: null         // ex : "https://www.linkedin.com/in/pseudo"
   },
   {
